@@ -12,6 +12,7 @@ def _get_env_list(key: str, default: str = "") -> List[str]:
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+<<<<<<< Updated upstream
 MODEL_ASSETS_DIR = Path(os.getenv("MODEL_ASSETS_DIR", str(PROJECT_ROOT / "assets" / "models")))
 _default_model_extensions = ".pt,.pth,.jit,.pth.tar"
 MODEL_FILE_EXTENSIONS: List[str] = [
@@ -50,6 +51,8 @@ def _discover_default_model_path() -> str:
 
     # 3) Fallback to empty (ModelService will run dummy mode if not set/found).
     return ""
+=======
+DEFAULT_MODEL_PATH = PROJECT_ROOT / "assets" / "models" / "ham10000_efficientnetV2m_7class_torchscript.pt"
 >>>>>>> Stashed changes
 
 BACKSERVER_HOST: str = os.getenv("BACKSERVER_HOST", "0.0.0.0")
