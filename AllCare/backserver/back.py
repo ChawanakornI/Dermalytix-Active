@@ -1462,6 +1462,7 @@ async def get_labels(
 model_service = ModelService(conf_threshold=config.CONF_THRESHOLD, source="normalClassifier")
 active_inference = model_registry.get_active_inference_model()
 if active_inference:
+<<<<<<< Updated upstream
     candidate_paths = [
         active_inference.get("active_path"),
         active_inference.get("production_path"),
@@ -1481,6 +1482,11 @@ if active_inference:
             print(
                 f"[model] active inference path not found, keeping current model: {configured_active}"
             )
+=======
+    active_path = active_inference.get("active_path") or active_inference.get("path")
+    if active_path:
+        model_service.set_model_path(active_path, source="AL")
+>>>>>>> Stashed changes
 
 if __name__ == "__main__":
     import uvicorn

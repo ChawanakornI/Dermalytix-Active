@@ -44,7 +44,7 @@ class LoginScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Detect skin cancer early with AI',
+                      'Detect skin cancer early cutting edge ML',
                       style: GoogleFonts.inter(
                         fontSize: 37,
                         fontWeight: FontWeight.w600,

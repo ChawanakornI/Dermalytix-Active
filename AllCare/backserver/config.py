@@ -50,6 +50,7 @@ def _discover_default_model_path() -> str:
 
     # 3) Fallback to empty (ModelService will run dummy mode if not set/found).
     return ""
+>>>>>>> Stashed changes
 
 BACKSERVER_HOST: str = os.getenv("BACKSERVER_HOST", "0.0.0.0")
 BACKSERVER_PORT: int = int(os.getenv("BACKSERVER_PORT", "8000"))

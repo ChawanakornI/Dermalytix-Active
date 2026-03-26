@@ -385,6 +385,7 @@ class _CaseSummaryScreenState extends State<CaseSummaryScreen> {
                         color: isDarkLoading ? Colors.white : Colors.black87,
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.none,
                       ),
                     ),
                     const SizedBox(height: 8),
@@ -396,6 +397,7 @@ class _CaseSummaryScreenState extends State<CaseSummaryScreen> {
                             isDarkLoading ? Colors.white70 : Colors.grey[600],
                         fontSize: 14,
                         height: 1.4,
+                        decoration: TextDecoration.none,
                       ),
                     ),
                     const SizedBox(height: 20),
@@ -446,6 +448,7 @@ class _CaseSummaryScreenState extends State<CaseSummaryScreen> {
                                             ? Colors.white60
                                             : Colors.grey[600],
                                     fontSize: 12,
+                                    decoration: TextDecoration.none,
                                   ),
                                   overflow: TextOverflow.ellipsis,
                                 );
