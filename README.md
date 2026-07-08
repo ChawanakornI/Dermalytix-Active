@@ -1,4 +1,4 @@
-# Dermalytix Active - AI-Powered Skin Cancer Detection with Active Learning
+# Dermalytix Active · Active Learning for Clinical Labeling
 
 Flutter mobile app + FastAPI backend for AI-assisted skin lesion diagnosis. The system combines deep learning inference with an **Active Learning (AL) pipeline** that enables continuous model improvement through expert feedback.
 
@@ -41,7 +41,12 @@ Flutter mobile app + FastAPI backend for AI-assisted skin lesion diagnosis. The 
 - **Event Log**: Full audit trail of model lifecycle events
 - **Configurable Training**: Admin-adjustable hyperparameters (epochs, batch size, learning rate)
 
-## Tech Stack
+## Team Members
+| Name | Student ID | Contract |
+| --- | --- | --- |
+| Tonnam Kiewsophon | 6588046 | [tonnam.kie@student.mahidol.ac.th ](mailto:tonnam.kie@student.mahidol.ac.th ) |
+| Nakarin Phoorahong | 6588070 | [nakarin.pho@student.mahidol.ac.th](mailto:nakarin.pho@student.mahidol.ac.th) |
+| Chawanakorn Rittirut | 6588084 | [chawanakorn.rit@student.mahidol.ac.th](mailto:chawanakorn.rit@student.mahidol.ac.th) |
 
 | Layer | Technologies |
 |-------|-------------|
