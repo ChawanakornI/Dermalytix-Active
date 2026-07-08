@@ -1,4 +1,4 @@
-# ALLCARE · Active Learning for Clinical Labeling
+# Dermalytix Active · Active Learning for Clinical Labeling
 
 ![Project Status Badge](https://img.shields.io/badge/status-in_development-yellow?style=flat-square)
 
@@ -9,7 +9,9 @@
 
 
 ## Active Learning Flow
--- Under development --
+![Uploading image.png…]()
+
+
 
 ## UX/UI Design
 [Photo in sequence in Google Drive](https://drive.google.com/drive/folders/1bou2JPzi6YnuEkhFfqoSYSjJ4LBE2Hhe?usp=share_link)
