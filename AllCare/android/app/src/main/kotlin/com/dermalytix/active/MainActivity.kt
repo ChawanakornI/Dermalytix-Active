@@ -1,4 +1,4 @@
-package com.example.allcare
+package com.dermalytix.active
 
 import io.flutter.embedding.android.FlutterActivity
 

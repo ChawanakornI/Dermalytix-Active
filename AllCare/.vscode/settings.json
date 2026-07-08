@@ -1,4 +1,4 @@
 {
-    "cmake.sourceDirectory": "/Users/nakarin/Downloads/AppPages/SeniorProjectAl/Allcare/linux",
+    "cmake.sourceDirectory": "${workspaceFolder}/linux",
     "java.configuration.updateBuildConfiguration": "interactive"
 }

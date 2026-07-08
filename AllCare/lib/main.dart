@@ -68,7 +68,7 @@ class MyApp extends StatelessWidget {
     final isDark = context.watch<AppState>().isDarkMode;
 
     return MaterialApp(
-      title: 'Alskin',
+      title: 'Dermalytix Active',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(

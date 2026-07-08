@@ -1,7 +1,11 @@
 import 'dart:ui';
 
-import 'package:allcare/theme/glass.dart';
+import 'package:dermalytix_active/theme/glass.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../../app_state.dart';
+import '../../localization/app_display.dart';
 
 class ForgotPasswordScreen extends StatefulWidget {
   const ForgotPasswordScreen({super.key});
@@ -22,9 +26,10 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
 
   void _submit() {
     if (!_formKey.currentState!.validate()) return;
+    final a = context.read<AppState>();
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Password reset link sent (mock).'),
+      SnackBar(
+        content: Text(AppDisplay.passwordResetMock(a)),
         behavior: SnackBarBehavior.floating,
       ),
     );
@@ -33,6 +38,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final appState = context.watch<AppState>();
     const accent = Color(0xFF2563EB);
 
     return Scaffold(
@@ -48,7 +54,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: Text(
-          'Forgot Password',
+          AppDisplay.forgotPasswordTitle(appState),
           style: TextStyle(
             color: isDark ? Colors.white : Colors.black87,
             fontWeight: FontWeight.w600,
@@ -117,7 +123,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Reset your password',
+                                AppDisplay.resetPasswordHeading(appState),
                                 style: TextStyle(
                                   fontSize: 22,
                                   fontWeight: FontWeight.w700,
@@ -126,7 +132,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                               ),
                               const SizedBox(height: 6),
                               Text(
-                                'We will send you a secure link to restore access.',
+                                AppDisplay.resetPasswordSubtitle(appState),
                                 style: TextStyle(
                                   fontSize: 14,
                                   color: isDark
@@ -142,8 +148,8 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                                   color: isDark ? Colors.white : Colors.black87,
                                 ),
                                 decoration: InputDecoration(
-                                  labelText: 'Email',
-                                  hintText: 'name@example.com',
+                                  labelText: AppDisplay.emailLabel(appState),
+                                  hintText: AppDisplay.emailHint(appState),
                                   prefixIcon: Icon(
                                     Icons.alternate_email,
                                     color:
@@ -180,10 +186,10 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                                 ),
                                 validator: (value) {
                                   if (value == null || value.trim().isEmpty) {
-                                    return 'Email is required';
+                                    return AppDisplay.emailRequired(appState);
                                   }
                                   if (!value.contains('@')) {
-                                    return 'Enter a valid email';
+                                    return AppDisplay.emailInvalid(appState);
                                   }
                                   return null;
                                 },
@@ -204,9 +210,9 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                                     ),
                                     elevation: 0,
                                   ),
-                                  child: const Text(
-                                    'Send Reset Link',
-                                    style: TextStyle(
+                                  child: Text(
+                                    AppDisplay.sendResetLink(appState),
+                                    style: const TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
