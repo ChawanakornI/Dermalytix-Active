@@ -1,4 +1,4 @@
-# AllCare - AI-Powered Skin Cancer Detection with Active Learning
+# Dermalytix Active - AI-Powered Skin Cancer Detection with Active Learning
 
 Flutter mobile app + FastAPI backend for AI-assisted skin lesion diagnosis. The system combines deep learning inference with an **Active Learning (AL) pipeline** that enables continuous model improvement through expert feedback.
 
@@ -32,6 +32,7 @@ Flutter mobile app + FastAPI backend for AI-assisted skin lesion diagnosis. The 
 - **Case management** with editable demographics and symptoms
 - **Role-aware UX**: GP view hides labeling; doctor view shows full workflow
 - **Glassmorphism UI** theme with light/dark support
+- **English / Thai UI**: switch language in **Settings**; choice is persisted (SharedPreferences) and applied across main screens, forms, navigation, and common dialogs
 
 ### Active Learning Pipeline
 - **Model Registry**: Version control for ML models with status tracking (training → evaluating → production → archived)
@@ -68,6 +69,8 @@ pip install -r requirements.txt
 
 # Start server
 PYTHONPATH=. uvicorn back:app --host 0.0.0.0 --port 8000
+or with this:
+python -m uvicorn backserver.back:app --host 0.0.0.0 --port 8000
 
 # Verify
 curl http://localhost:8000/health
@@ -84,6 +87,12 @@ flutter pub get
 
 flutter run --dart-define=BACKSERVER_BASE=http://10.0.2.2:8000
 ```
+
+### Localization (EN/TH)
+
+1. Run the app and open **Settings** (bottom navigation).
+2. Choose **English** or **ไทย** — the selection is saved and restored on next launch (`AppState` + `SharedPreferences` keys `app_language`; theme uses `app_dark_mode`).
+3. Shared labels and domain display strings (case status filters, chart axis labels, HAM100-style codes, body locations, symptoms) live in [`lib/localization/app_display.dart`](lib/localization/app_display.dart); screens also use `AppState.translate(en, th)` for page-specific copy. Internal/API values (e.g. stored case status, location keys sent to the backend) stay in English.
 
 ## Roles & Credentials
 

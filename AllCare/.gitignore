@@ -123,7 +123,10 @@ ChangesTracking.md
 Gemini3_reviewed_backend.md
 opus_reviewed_backend.md
 AL_architecture.md
+BRAND_RENAME_REVIEW.md
+APP_RENAME_REVIEW.md
+DERMALYTIX_ACTIVE_RENAME_ANALYSIS.md
 todo.md
 Poster_Template.pdf
-AllCare/lib/features/case/tepm
-AllCare/lib/features/case/planforboom
+lib/features/case/tepm
+lib/features/case/planforboom

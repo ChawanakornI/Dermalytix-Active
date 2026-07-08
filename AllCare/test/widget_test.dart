@@ -9,8 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:allcare/features/login/loading_screen.dart';
-import 'package:allcare/features/login/login_screen.dart';
+import 'package:dermalytix_active/features/login/loading_screen.dart';
+import 'package:dermalytix_active/features/login/login_screen.dart';
 
 void main() {
   testWidgets('Loading screen renders', (WidgetTester tester) async {

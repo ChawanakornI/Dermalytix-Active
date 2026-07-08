@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "allcare" "\0"
+            VALUE "FileDescription", "Dermalytix Active" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "allcare" "\0"
+            VALUE "InternalName", "dermalytix_active" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "allcare.exe" "\0"
-            VALUE "ProductName", "allcare" "\0"
+            VALUE "OriginalFilename", "dermalytix_active.exe" "\0"
+            VALUE "ProductName", "Dermalytix Active" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
