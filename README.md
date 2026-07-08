@@ -9,7 +9,7 @@
 
 
 ## Active Learning Flow
-![Uploading image.png…]()
+[![Uploading image.png…]()](https://drive.google.com/file/d/1k_CvwIEPCwh--lo-b-42QnMrVUeaYNAC/view?usp=drive_link)
 
 
 
