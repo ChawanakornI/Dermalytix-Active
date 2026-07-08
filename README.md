@@ -9,7 +9,7 @@
 
 
 ## Active Learning Flow
-[![Uploading image.png…]()](https://drive.google.com/file/d/1k_CvwIEPCwh--lo-b-42QnMrVUeaYNAC/view?usp=drive_link)
+![Active Learning Lifecycle](assets/al-life-cycle.jpg)
 
 
 
@@ -24,7 +24,7 @@
 ## Team Members
 | Name | Student ID | Contract |
 | --- | --- | --- |
-| Tonnam Kiewsophon | 6588046 | [tonnam.kie@student.mahidol.ac.th ](mailto:tonnam.kie@student.mahidol.ac.th ) |
+| Tonnam Kiewsophon | 6588046 | [tonnam.kie@student.mahidol.ac.th ](mailto:tonnam.kie@student.mahidol.ac.th ) |
 | Nakarin Phoorahong | 6588070 | [nakarin.pho@student.mahidol.ac.th](mailto:nakarin.pho@student.mahidol.ac.th) |
 | Chawanakorn Rittirut | 6588084 | [chawanakorn.rit@student.mahidol.ac.th](mailto:chawanakorn.rit@student.mahidol.ac.th) |
 
