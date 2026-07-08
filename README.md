@@ -9,7 +9,7 @@
 
 
 ## Active Learning Flow
-![Active Learning Lifecycle](assets/al-life-cycle.jpg)
+![Active Learning Lifecycle](asset/al-life-cycle.jpg)
 
 
 
